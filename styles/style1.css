@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+body{
+
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
+.bar{
+  background-color: black;
+  padding: 12px 0;
+  text-align: center;
+}
+.bar-text{
+  color: white;
+  text-transform: uppercase;
+  /* text-align: center; */
+}
+.bar__subtext{
+  color:  rgb(255, 137, 218);
+  font-size: 14px;
+}
+.bar__link{
+  color:  rgb(255, 137, 218);
+  text-decoration: none;
+  border-bottom: 1px solid  rgb(255, 137, 218);
+}
+.desktop-header{
+  max-width: 1230px;
+  margin:auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-menu{
+  display:flex;
+}
+.logo{
+  flex:1;
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+li:not(:last-child) {
+  margin-right: 25px;
+}
+.cart{
+  margin-left:40px
+}
+
+
+/* expand navigation */
+.menu-expand__content {
+  padding-left: 134px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.hero__content{
+  background-image: url(../images/bg.jpg);
+  /* background-image: url(../assets/hero-bg.jpg); */
+  background-repeat: no-repeat;
+  
+  padding: 104px 0px 148px 154px;
+}
+
+.hero__heading {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  max-width: 500px;
+}
+
+
+.hero__button{
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: rgb(255, 137, 218);
+  border: 1px solid rgb(255, 137, 218);
+  padding: 10px 46px;
+  font-weight: bold;
+}
+.features{
+  max-width:800px;
+  margin:0 auto;
+}
+.features__header{
+  font-size:28px;
+  text-align:center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.features__text{
+  text-align:center;
+}
+.features__boxes{
+  display: flex;
+  justify-content: space-between;
+  padding-top:0px;
+  padding-bottom: 45px ;
+  margin-bottom: 15px;
+  
+}
+.box{
+  position:relative;
+  width: 200px;
+  height: 180px;
+}
+.box a{
+  color: black;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  position: absolute;
+  left:-10px;
+  top: 95px;
+  z-index:10;
+}
+
+.box a:hover{
+  color:rgb(255, 137, 218);
+  transition: .5s ease;
+}
+.box p{
+  font-size: 150px;
+  font-weight: 300;
+  position: absolute;
+  left:37px;
+  top:17px;
+  color: rgb(255, 137, 218);
+}
+.features__button{
+  display: block;
+  margin:0 auto;
+}
+@media screen and (max-width:980px){
+  .features__boxes{
+    display:block;
+    margin-bottom: 30px;
+
+  }
+  .box{
+    margin:auto;
+
+    }
+  
+}

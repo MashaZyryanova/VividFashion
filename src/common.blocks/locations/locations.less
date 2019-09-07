@@ -1,0 +1,33 @@
+@import "../../styles/declarations";
+
+.locations__content {
+  padding: 50px 0;
+}
+
+.locations__heading {
+  margin-bottom: 95px;
+}
+
+.locations__boxes {
+  .flex();
+  .justify-content(space-between);
+  padding: 0 @small-gutter;
+
+  margin-bottom: 48px;
+  .flex-wrap(wrap);
+}
+
+.locations__location {
+  flex: 1;
+}
+
+@media @one-column {
+  .locations__boxes {
+    display: block;
+  }
+
+  .locations__location {
+    margin-bottom: 2rem;
+  }
+
+}

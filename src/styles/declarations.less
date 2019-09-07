@@ -1,0 +1,116 @@
+.to(@target, @context: 16 ) {
+    @em: ((@target / @context) + 0em);
+  }
+  
+  .toR(@target, @context: 16 ) {
+    @rem: ((@target / @context) + 0rem);
+  }
+
+// Media queries
+// =================================//
+//
+@desktop-menu: ~"screen and (min-width: 1201px)";
+@mobile-menu: ~"screen and (max-width: 1200px)";
+@one-column: ~"screen and (max-width: 980px)";
+@mobile: ~"screen and (max-width: 980px)";
+
+//
+// =========================================//
+// Variables
+// =========================================//
+//
+
+//Layout
+@max-page-width: 1230px;
+@max-page-inner: 962px;
+
+@padding-shift: (@max-page-width - @max-page-inner) / 2;
+@small-gutter: 20px;
+
+@products-w: 270px;
+@products-h: 270px;
+
+@location-w: 270px;
+@location-h: 200px;
+
+//Color variables
+@hero-bg: rgba(250,206,82,1);
+@border-grey: #c7c6c6;
+@accent: rgb(255, 137, 218);
+@subhead-cl: #231f20;
+@list-item-cl: #231f20;
+@copyright-bg: #f9f9f9;
+@copyright: #999596;
+
+//
+// ==============================================
+// Typography
+// ==============================================
+//
+
+
+//Font size variables
+@base-font: 'PT Sans', sans-serif;;
+
+//Typography variables
+
+//
+// ==============================================
+// Mixins
+// ==============================================
+//
+
+.flex() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-direction(@flex-direction) {
+  -webkit-flex-direction: @flex-direction;
+  -ms-flex-direction: @flex-direction;
+  flex-direction: @flex-direction;
+}
+
+.justify-content(@justify-content) {
+  -webkit-justify-content: @justify-content;
+  justify-content: @justify-content;
+}
+
+.align-items(@align-items) {
+  -webkit-align-items: @align-items;
+  align-items: @align-items;
+}
+
+.flex-wrap(@wrap) {
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
+}
+
+.heading-1 {
+  font-size: 48px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  line-height: 1.15em;
+}
+
+.heading-2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.heading-3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.base-text {
+  font-family: @base-font;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}

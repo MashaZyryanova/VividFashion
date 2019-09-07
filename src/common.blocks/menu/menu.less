@@ -1,0 +1,22 @@
+@import "../../styles/declarations";
+
+.menu {
+  .flex();
+  .align-items(center);
+  .justify-content(space-between);
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+}
+
+// Example of using less functions to convert px unit to rem
+.menu__link {
+  text-transform: uppercase;
+  font-size: .toR(13)[@rem];
+  letter-spacing: 1px;
+  color: @list-item-cl;
+}
